@@ -7,60 +7,64 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".Signup_Form">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/registerId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="Book Entry"
         android:textSize="34sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/fullName"
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="Full Name" />
+        android:layout_height="2dp"
+        android:background="@android:color/black" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/bookName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="Email" />
+        android:hint="Book Name" />
 
     <EditText
-        android:id="@+id/phone"
+        android:id="@+id/author"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="Phone" />
+        android:hint="Author" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/ISBN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="number"
+        android:hint="ISBN" />
 
     <EditText
-        android:id="@+id/confirmPassword"
+        android:id="@+id/pages"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:hint="Confirm Password"
-        android:inputType="textPassword" />
+        android:hint="Pages"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Price" />
 
     <Button
-        android:id="@+id/btnSignup"
+        android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Signup"
+        android:text="Submit"
         android:textSize="15sp" />
-
 
 </LinearLayout>
