@@ -21,46 +21,65 @@
         android:id="@+id/fullName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="Full Name" />
+        android:layout_marginTop="10dp"
+        android:hint="Patient Name" />
 
-    <EditText
-        android:id="@+id/email"
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="Email" />
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Address" />
 
     <EditText
         android:id="@+id/phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:hint="Phone" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/disease"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="Password"
-        android:inputType="textPassword" />
+        android:layout_marginTop="10dp"
+        android:hint="Disease"
+        android:inputType="text" />
 
     <EditText
-        android:id="@+id/confirmPassword"
+        android:id="@+id/doctorName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="Confirm Password"
-        android:inputType="textPassword" />
+        android:layout_marginTop="10dp"
+        android:hint="Doctor Name"
+        android:inputType="text" />
 
     <Button
-        android:id="@+id/btnSignup"
+        android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Signup"
+        android:layout_marginTop="10dp"
+        android:text="submit"
         android:textSize="15sp" />
-
 
 </LinearLayout>
